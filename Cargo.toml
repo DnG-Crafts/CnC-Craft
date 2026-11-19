@@ -1,0 +1,29 @@
+[package]
+name = "cnccraft"
+version = "0.1.0"
+edition = "2021"
+description = "CncCraft - design, toolpaths and machine control for CNC routers"
+
+[[bin]]
+name = "cnccraft"
+path = "src/main.rs"
+
+[dependencies]
+eframe = "0.31.1"
+egui = "0.31.1"
+epaint_default_fonts = "0.31.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rfd = "0.15.4"
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+geo = "0.33.1"
+ttf-parser = "0.25.1"
+usvg = { version = "0.48.1", default-features = false }
+serialport = "4.10.1"
+qrcode = { version = "0.14.1", default-features = false }
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 2
