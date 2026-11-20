@@ -86,7 +86,7 @@ The program is built as `target/release/cnccraft.exe` (on Windows the icon and v
 5. Choose **Toolpaths → Preview cut…** to watch it cut.
 6. Choose **Toolpaths → Check job before cutting…**, then **File → Save G-code…**, or connect on the **Machine** tab and press **Start**.
 
-The [wiki](wiki/Home) explains every tool and setting step by step.
+The [wiki](../../wiki)  explains every tool and setting step by step.
 
 ---
 
